@@ -15,27 +15,28 @@ const highlightMenu = () => {
   const elem = document.querySelector('.highlight');
   const homeMenu = document.querySelector('#home-page');
   const weMenu = document.querySelector('#we-page');
-  const facultyMenu = document.querySelector('#faculty-page');
   const memoriesMenu = document.querySelector('#memories-page');
 
 
 
   let scrollPos = window.scrollY;
-  // console.log(scrollPos);
+  console.log(scrollPos);
 
   // adds 'highlight' class to my menu items
-  if (window.innerWidth > 960 && scrollPos < 600) {
+  if (window.innerWidth > 960 && scrollPos < 780) {
     homeMenu.classList.add('highlight');
     weMenu.classList.remove('highlight');
+    memoriesMenu.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1400) {
-    facultyMenu.classList.add('highlight');
+  } else if (window.innerWidth > 960 && scrollPos >= 780 && scrollPos < 6200) {
+    weMenu.classList.add('highlight');
+    homeMenu.classList.remove('highlight');
+    memoriesMenu.classList.remove('highlight');
+    return;
+  } else if (window.innerWidth > 960 && scrollPos >= 6200) {
+    memoriesMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     weMenu.classList.remove('highlight');
-    return;
-  } else if (window.innerWidth > 960 && scrollPos < 2345) {
-    weMenu.classList.add('highlight');
-    memoriesMenu.classList.remove('highlight');
     return;
   }
 

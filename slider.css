@@ -1,18 +1,18 @@
-@import "https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap";
- body {
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap"; */
+ /* body {
 	 width: 100%;
 	 margin: 0;
 	 padding: 0;
 	 font-family: open sans;
 	 background: #f8f8f8;
-}
- h3 {
+} */
+ /* h3 {
 	 text-align: center;
 	 margin: 6% auto;
 	 font-size: 1.8rem;
 	 font-weight: 800;
 	 color: #444;
-}
+} */
  .slider {
 	 display: flex;
 	 height: 350px;
@@ -42,19 +42,18 @@
 	 box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
 }
  .slide {
-
 	 position: relative;
 }
  .slide img {
 	 height: 100%;
-	 width: 250px;
+	 width: 350px;
 	 margin: 0 10px;
 	 object-fit: cover;
 	 border-radius: 15px;
 	 cursor: pointer;
 	 transition: .25s ease-in-out;
 }
- .control-prev-btn {
+ /* .control-prev-btn {
 	 position: absolute;
 	 top: 50%;
 	 left: 0;
@@ -81,8 +80,8 @@
 	 user-select: none;
 	 color: #444;
 	 cursor: pointer;
-}
-.slide img.zoomed{
+} */
+/* .slide img.zoomed{
 	  width: 500px;
     height: 600px;
     position: fixed;
@@ -102,7 +101,7 @@
 }
 .overlay.active{
 	display: block;
-}
+} */
  @media only screen and (max-width: 420px) {
 	 .slider {
 		 padding: 0;
