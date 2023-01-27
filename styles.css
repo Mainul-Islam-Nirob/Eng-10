@@ -701,7 +701,9 @@
 
   .fab:hover {
     transform: scale(1.2);
-    color: ee0979;
+    color: #9518fc;
+    transition: all 0.3s ease;
+    /* color: #ee0979; */
   }
   
   .website__rights {
