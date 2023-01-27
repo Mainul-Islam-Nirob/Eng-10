@@ -353,11 +353,11 @@
     position: relative;
     transition: all 0.35s;
     outline: none;
+    z-index: 2;
   }
   
-  .main__btn a {
+  .btn-link {
     position: relative;
-    z-index: 2;
     color: #fff;
     text-decoration: none;
   }
@@ -372,6 +372,7 @@
     background: #ff1ead;
     transition: all 0.35s;
     border-radius: 4px;
+    z-index: -1;
   }
   
   .main__btn:hover {
@@ -697,6 +698,11 @@
     align-items: center;
     width: 240px;
   }
+
+  .fab:hover {
+    transform: scale(1.2);
+    color: ee0979;
+  }
   
   .website__rights {
     color: #fff;
@@ -731,9 +737,6 @@
       width: 100%;
     }
   }
-
-
-  /* My Style */
 
   .student-img {
     width: 250px;

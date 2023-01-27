@@ -1,18 +1,3 @@
-/* @import "https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap"; */
- /* body {
-	 width: 100%;
-	 margin: 0;
-	 padding: 0;
-	 font-family: open sans;
-	 background: #f8f8f8;
-} */
- /* h3 {
-	 text-align: center;
-	 margin: 6% auto;
-	 font-size: 1.8rem;
-	 font-weight: 800;
-	 color: #444;
-} */
  .slider {
 	 display: flex;
 	 height: 350px;
@@ -53,55 +38,7 @@
 	 cursor: pointer;
 	 transition: .25s ease-in-out;
 }
- /* .control-prev-btn {
-	 position: absolute;
-	 top: 50%;
-	 left: 0;
-	 background-color: rgba(255,255,255,0.55);
-	 height: 100px;
-	 line-height: 100px;
-	 width: 45px;
-	 text-align: center;
-	 box-shadow: 0 1px 3px #888;
-	 user-select: none;
-	 color: #444;
-	 cursor: pointer;
-}
- .control-next-btn {
-	 position: absolute;
-	 top: 50%;
-	 right: 0;
-	 background-color: rgba(255,255,255,0.55);
-	 height: 100px;
-	 line-height: 100px;
-	 width: 45px;
-	 text-align: center;
-	 box-shadow: 0 1px 3px #888;
-	 user-select: none;
-	 color: #444;
-	 cursor: pointer;
-} */
-/* .slide img.zoomed{
-	  width: 500px;
-    height: 600px;
-    position: fixed;
-    left: 25%;
-    top: 0%;
-    z-index: 1000;
-		transform: scale(1) translatey(0) !important; 
-	
-}
-.overlay{
-		position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,.45);
-    top: 0;
-		display: none;
-}
-.overlay.active{
-	display: block;
-} */
+
  @media only screen and (max-width: 420px) {
 	 .slider {
 		 padding: 0;
