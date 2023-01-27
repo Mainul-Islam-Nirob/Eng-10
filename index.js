@@ -90,7 +90,7 @@ navLogo.addEventListener('click', hideMobileMenu);
 
 
 //Slider
-for (let i = 1; i <= 51; i++) {
+for (let i = 1; i <= 55; i++) {
   let slide = document.createElement("div");
   slide.classList.add("slide");
   
