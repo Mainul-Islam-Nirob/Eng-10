@@ -22,7 +22,7 @@ const highlightMenu = () => {
   let scrollPos = window.scrollY;
   console.log(scrollPos);
 
-  // adds 'highlight' class to my menu items
+  // adds 'highlight' my menu items while innerWidth > 960
   if (window.innerWidth > 960 && scrollPos < 780) {
     homeMenu.classList.add('highlight');
     weMenu.classList.remove('highlight');
@@ -43,7 +43,30 @@ const highlightMenu = () => {
   if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove('highlight');
   }
+
+  // adds 'highlight' while mobile view
+ if (window.innerWidth < 760 && scrollPos < 700) {
+  homeMenu.classList.add('highlight_mobile');
+  weMenu.classList.remove('highlight_mobile');
+  memoriesMenu.classList.remove('highlight_mobile');
+  return;
+} else if (window.innerWidth < 760 && scrollPos >= 700 && scrollPos < 19700) {
+  weMenu.classList.add('highlight_mobile');
+  homeMenu.classList.remove('highlight_mobile');
+  memoriesMenu.classList.remove('highlight_mobile');
+  return;
+} else if (window.innerWidth < 760 && scrollPos >= 19700) {
+  memoriesMenu.classList.add('highlight_mobile');
+  homeMenu.classList.remove('highlight_mobile');
+  weMenu.classList.remove('highlight_mobile');
+  return;
+}
+
 };
+
+
+
+
 
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
