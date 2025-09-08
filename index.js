@@ -90,15 +90,35 @@ navLogo.addEventListener('click', hideMobileMenu);
 
 
 //Slider
-for (let i = 1; i <= 56; i++) {
+// for (let i = 1; i <= 75; i++) {
+//   let slide = document.createElement("div");
+//   slide.classList.add("slide");
+  
+//   let img = document.createElement("img");
+//   img.src = "./memo-img/" + i + ".jpg";
+//   img.alt = "memories";
+  
+//   slide.appendChild(img);
+//   sliderContainer.appendChild(slide);
+// }
+  
+
+for (let i = 1; i <= 75; i++) {
   let slide = document.createElement("div");
   slide.classList.add("slide");
-  
+
   let img = document.createElement("img");
-  img.src = "./memo-img/" + i + ".jpg";
   img.alt = "memories";
-  
+
+  // Try .jpg first
+  img.src = `./memo-img/${i}.jpg`;
+
+  // If .jpg fails, fallback to .jpeg
+  img.onerror = function () {
+    this.onerror = null; // Prevent infinite loop
+    this.src = `./memo-img/${i}.jpeg`;
+  };
+
   slide.appendChild(img);
   sliderContainer.appendChild(slide);
 }
-  
